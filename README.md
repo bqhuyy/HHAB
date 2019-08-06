@@ -26,3 +26,6 @@
 
 5. Basic asset
 * [Standard Assets](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351)
+
+6. Skybox
+* [Urban Night Sky](https://assetstore.unity.com/packages/2d/textures-materials/sky/urban-night-sky-134468)
