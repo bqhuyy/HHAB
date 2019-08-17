@@ -5,9 +5,15 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
     public SceneFader fader;
+    public GameObject audioSource;
 
-    private string multiplayerScene = "MultiplayerScene";
-    private string inGameScene = "InGameScene";
+    const string multiplayerScene = "MultiplayerScene";
+    const string inGameScene = "InGameScene";
+
+    private void Start()
+    {
+        DontDestroyOnLoad(audioSource);
+    }
 
     public void Play()
     {
