@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
@@ -13,9 +14,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
-        
+        [SerializeField] private MouseLook m_MouseLook;
+        private Camera m_Camera;
+
         private void Start()
         {
+            m_Camera = Camera.main;
             // get the transform of the main camera
             if (Camera.main != null)
             {
@@ -30,11 +34,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             // get the third person character ( this should never be null due to require component )
             m_Character = GetComponent<ThirdPersonCharacter>();
+
+            m_MouseLook.Init(transform, m_Camera.transform);
         }
 
 
         private void Update()
         {
+            RotateView();
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
@@ -45,6 +52,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         // Fixed update is called in sync with physics
         private void FixedUpdate()
         {
+
             // read inputs
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
@@ -55,7 +63,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 // calculate camera relative direction to move:
                 m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
-                m_Move = v*m_CamForward + h*m_Cam.right;
+                m_Move = (v>0?v:0)*m_CamForward + h*m_Cam.right;
             }
             else
             {
@@ -70,6 +78,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // pass all parameters to the character control script
             m_Character.Move(m_Move, crouch, m_Jump);
             m_Jump = false;
+
+            m_MouseLook.UpdateCursorLock();
+        }
+
+        private void RotateView()
+        {
+            m_MouseLook.LookRotation(transform, m_Camera.transform);
         }
     }
 }
