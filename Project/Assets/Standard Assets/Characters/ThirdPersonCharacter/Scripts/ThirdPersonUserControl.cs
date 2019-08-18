@@ -17,8 +17,15 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         [SerializeField] private MouseLook m_MouseLook;
         private Camera m_Camera;
 
+        Rigidbody m_Rigidbody;
+
+        private float m_TimePressed = 0f;
+        private const float maxInactiveDuration = 2f;
+
         private void Start()
         {
+            m_Rigidbody = GetComponent<Rigidbody>();
+
             m_Camera = Camera.main;
             // get the transform of the main camera
             if (Camera.main != null)
@@ -57,6 +64,21 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
             bool crouch = Input.GetKey(KeyCode.C);
+
+            if(Mathf.Abs(h)+Mathf.Abs(v) > 0 && m_Rigidbody.velocity.magnitude > 0)
+            {
+                m_TimePressed = 0f;
+            }
+            else
+            {
+                m_TimePressed += Time.deltaTime;
+            }
+
+            if(m_TimePressed >= maxInactiveDuration)
+            {
+                Debug.Log("hihi");
+                m_TimePressed = 0f;
+            }
 
             // calculate move direction to pass to character
             if (m_Cam != null)
