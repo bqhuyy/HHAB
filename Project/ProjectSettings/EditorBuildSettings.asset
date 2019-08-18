@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InGameMultiplayerScene.unity
     guid: 2ca584ccb5dac384a9dc13b7c383f91c
+  - enabled: 1
+    path: Assets/Scenes/InGameMultiplayerSceneFPS.unity
+    guid: 93eda8ed45483ef4a9ee7d6f65b5b4fa
   m_configObjects: {}

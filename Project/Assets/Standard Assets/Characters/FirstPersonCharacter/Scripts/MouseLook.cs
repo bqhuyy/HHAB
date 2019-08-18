@@ -53,6 +53,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             UpdateCursorLock();
+            Debug.Log(m_CharacterTargetRot.ToString());
         }
 
         public void SetCursorLock(bool value)
