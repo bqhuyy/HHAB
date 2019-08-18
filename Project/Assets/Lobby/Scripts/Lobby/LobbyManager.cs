@@ -20,6 +20,8 @@ namespace Prototype.NetworkLobby
         [Tooltip("Time in second between all players ready & match start")]
         public float prematchCountdown = 5.0f;
 
+        private GameObject backgroundImage;
+
         [Space]
         [Header("UI Reference")]
         public LobbyTopPanel topPanel;
@@ -61,6 +63,8 @@ namespace Prototype.NetworkLobby
 
             backButton.gameObject.SetActive(false);
             GetComponent<Canvas>().enabled = true;
+
+            backgroundImage = GameObject.Find("Background-Image-Lobby");
 
             DontDestroyOnLoad(gameObject);
 
@@ -109,8 +113,8 @@ namespace Prototype.NetworkLobby
             {
                 ChangeTo(null);
 
+                backgroundImage.SetActive(false);
                 Destroy(GameObject.Find("MainMenuUI(Clone)"));
-                Destroy(GameObject.Find("Background-Image-Lobby"));
 
                 //backDelegate = StopGameClbk;
                 topPanel.isInGame = true;
@@ -162,7 +166,8 @@ namespace Prototype.NetworkLobby
         public void GoBackButton()
         {
             backDelegate();
-			topPanel.isInGame = false;
+            backgroundImage.SetActive(true);
+            topPanel.isInGame = false;
         }
 
         // ----------------- Server management
