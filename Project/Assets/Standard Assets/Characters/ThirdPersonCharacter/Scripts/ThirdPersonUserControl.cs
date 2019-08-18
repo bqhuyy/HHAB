@@ -20,7 +20,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         Rigidbody m_Rigidbody;
 
         private float m_TimePressed = 0f;
-        private const float maxInactiveDuration = 2f;
+        public float maxNotMovingDuration = 2f;
 
         private void Start()
         {
@@ -74,7 +74,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_TimePressed += Time.deltaTime;
             }
 
-            if(m_TimePressed >= maxInactiveDuration)
+            if(m_TimePressed >= maxNotMovingDuration)
             {
                 Debug.Log("hihi");
                 m_TimePressed = 0f;
