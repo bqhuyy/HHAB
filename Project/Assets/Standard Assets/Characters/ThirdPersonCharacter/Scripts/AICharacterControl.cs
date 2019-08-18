@@ -36,6 +36,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void FixedUpdate()
         {
+            FindClosestTarget();
+        }
+
+        private void FindClosestTarget()
+        {
             GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
             if (players.Length > 0)
             {
@@ -43,7 +48,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 Transform currentTarget = players[0].transform;
                 foreach (GameObject player in players)
                 {
-                    float tmp = Vector3.Distance(players[0].transform.position, gameObject.transform.position);
+                    float tmp = Vector3.Distance(player.transform.position, gameObject.transform.position);
                     if (tmp < minDistance)
                     {
                         minDistance = tmp;
@@ -53,7 +58,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 this.SetTarget(currentTarget);
             }
         }
-
 
         public void SetTarget(Transform target)
         {
