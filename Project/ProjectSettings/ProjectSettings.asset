@@ -643,10 +643,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 0c96d99d-6450-4ca6-a1bf-8b0dafc5a259
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: HHAB
+  organizationId: pvan_unity
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

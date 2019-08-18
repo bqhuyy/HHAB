@@ -110,6 +110,7 @@ namespace Prototype.NetworkLobby
                 ChangeTo(null);
 
                 Destroy(GameObject.Find("MainMenuUI(Clone)"));
+                Destroy(GameObject.Find("Background-Image-Lobby"));
 
                 //backDelegate = StopGameClbk;
                 topPanel.isInGame = true;
