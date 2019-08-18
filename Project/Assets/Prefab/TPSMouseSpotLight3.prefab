@@ -244,6 +244,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TPSMouseSpotLight3
       objectReference: {fileID: 0}
+    - target: {fileID: 4252978552952718372, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4252978552963026790, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_JumpPower
