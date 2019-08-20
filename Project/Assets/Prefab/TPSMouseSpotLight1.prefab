@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TPSMouseSpotLight1
       objectReference: {fileID: 0}
+    - target: {fileID: 1277957082078888556, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: bloodRainController
+      value: 
+      objectReference: {fileID: 5713063849875432818}
     - target: {fileID: 4252978552953008544, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -79,3 +84,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f71761172e48a4c30878cd3f231ac875, type: 3}
+--- !u!114 &5713063849875432818 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6899392015382812866, guid: f71761172e48a4c30878cd3f231ac875,
+    type: 3}
+  m_PrefabInstance: {fileID: 1222570303381339568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ed7010dce92fa46935fbe6c9b455b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
