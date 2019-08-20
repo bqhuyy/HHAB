@@ -1,7 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityStandardAssets.CrossPlatformInput;
+using System.Collections;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -20,7 +23,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         Rigidbody m_Rigidbody;
 
         private float m_TimePressed = 0f;
+
         public float maxNotMovingDuration = 2f;
+        public TextMeshProUGUI m_TextMeshPro;
 
         private void Start()
         {
@@ -68,16 +73,22 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if(Mathf.Abs(h)+Mathf.Abs(v) > 0 && m_Rigidbody.velocity.magnitude > 0)
             {
                 m_TimePressed = 0f;
+                m_TextMeshPro.text = "";
             }
             else
             {
                 m_TimePressed += Time.deltaTime;
+
+                float remainingTime = maxNotMovingDuration - m_TimePressed;
+                remainingTime = Mathf.Max(0, remainingTime);
+
+                m_TextMeshPro.text = string.Format("{0:0.00}", remainingTime);
             }
 
             if(m_TimePressed >= maxNotMovingDuration)
             {
                 Debug.Log("hihi");
-                m_TimePressed = 0f;
+                //m_TimePressed = 0f;
             }
 
             // calculate move direction to pass to character

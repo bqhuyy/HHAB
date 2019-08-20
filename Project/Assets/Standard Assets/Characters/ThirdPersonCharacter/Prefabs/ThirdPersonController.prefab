@@ -1472,6 +1472,7 @@ GameObject:
   - component: {fileID: 13615390}
   - component: {fileID: 11444856}
   - component: {fileID: 11469404}
+  - component: {fileID: 3078679029681327958}
   - component: {fileID: 543017878}
   - component: {fileID: 543017877}
   - component: {fileID: 543017876}
@@ -1569,6 +1570,8 @@ MonoBehaviour:
     smooth: 0
     smoothTime: 5
     lockCursor: 1
+  maxNotMovingDuration: 2
+  m_TextMeshPro: {fileID: 0}
 --- !u!114 &11469404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1589,6 +1592,26 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.3
+--- !u!114 &3078679029681327958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149790}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 199623f1838414863b2c76b59e16e0f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodRainController: {fileID: 0}
+  splashInRain: {fileID: 0}
+  splashOutRain: {fileID: 0}
+  frozenRain: {fileID: 0}
+  splashInAudio: {fileID: 0}
+  splashOutAudio: {fileID: 0}
+  damageAudio: {fileID: 0}
+  windAudio: {fileID: 0}
 --- !u!114 &543017878
 MonoBehaviour:
   m_ObjectHideFlags: 0
