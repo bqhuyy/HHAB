@@ -6,6 +6,7 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class SetupLocalPlayer : NetworkBehaviour
 {
+    public Camera cam;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,10 @@ public class SetupLocalPlayer : NetworkBehaviour
         {
             GetComponent<ThirdPersonCharacter>().enabled = true;
             GetComponent<ThirdPersonUserControl>().enabled = true;
+        }
+        else
+        {
+            cam.enabled = false;
         }
     }
 

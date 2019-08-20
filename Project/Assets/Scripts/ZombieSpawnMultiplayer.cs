@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class ZombieSpawnMultiplayer : NetworkBehaviour
+public class ZombieSpawnMultiplayer : MonoBehaviour
 {
     public GameObject zombiePrefab;
     public float radius = 10;
     public int numberZombie = 10;
-    public int timeBetweenSpawn = 10; // 10 sec spawn numberZombie zombies
-
-    private float lastSpawnTime = -100000;
+    public int timeBetweenSpawn = 5; // 5 sec spawn numberZombie zombies
 
     // Update is called once per frame
     void Start()
@@ -28,7 +26,12 @@ public class ZombieSpawnMultiplayer : NetworkBehaviour
                 int maxZ = (int)Mathf.Sqrt(radius * radius - xPos * xPos);
                 int zPos = Random.Range(-maxZ, maxZ);
 
-                Vector3 spawnLocation = transform.position + new Vector3(xPos, 0, zPos);
+                GameObject[] spawnLocations = GameObject.FindGameObjectsWithTag("ZombieSpawnMultiplayerLocation");
+
+                int r = Random.Range(0, spawnLocations.Length - 1);
+                GameObject currentSpawnLocation = spawnLocations[r];
+
+                Vector3 spawnLocation = currentSpawnLocation.transform.position + new Vector3(xPos, 0, zPos);
                 GameObject go = Instantiate(zombiePrefab, spawnLocation, Quaternion.identity);
                 NetworkServer.Spawn(go);
             }
