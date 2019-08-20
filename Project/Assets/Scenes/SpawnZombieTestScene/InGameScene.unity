@@ -119,7 +119,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 8b27f5a9facfb0f4ea39622351cbec3a, type: 2}
 --- !u!1 &261887007
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -306,7 +306,7 @@ PrefabInstance:
     - target: {fileID: 8709118943393747175, guid: df002b05b3c985343b06b3ffcadcc140,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.73
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8709118943393747175, guid: df002b05b3c985343b06b3ffcadcc140,
         type: 3}
@@ -375,7 +375,7 @@ PrefabInstance:
     - target: {fileID: 3166853261774949392, guid: 7555e369d6dda44c99549a782612656d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3166853261774949392, guid: 7555e369d6dda44c99549a782612656d,
         type: 3}
@@ -420,6 +420,11 @@ PrefabInstance:
     - target: {fileID: 3166853261774949392, guid: 7555e369d6dda44c99549a782612656d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616559910109868238, guid: 7555e369d6dda44c99549a782612656d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

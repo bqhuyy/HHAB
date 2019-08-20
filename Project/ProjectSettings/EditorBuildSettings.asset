@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SpawnZombieTestScene/InGameScene.unity
     guid: 4c4c3bba190d9ec48be3e7df437e4ede
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SpawnZombieTestScene/InGameMultiplayerScene.unity
     guid: c4df8f2c290b8424c8b826ac530eea67
   m_configObjects: {}
