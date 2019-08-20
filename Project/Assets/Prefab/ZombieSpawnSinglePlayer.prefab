@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3a9dc045257d04b8ee4b8271b3d6a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombiePrefab: {fileID: 0}
-  radius: 20
-  numberZombie: 10
+  zombiePrefab: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
+  radius: 10
+  numberZombie: 5
   timeBetweenSpawn: 10
