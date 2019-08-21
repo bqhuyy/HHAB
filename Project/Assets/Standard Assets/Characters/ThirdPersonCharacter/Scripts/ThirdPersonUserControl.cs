@@ -18,17 +18,24 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
         [SerializeField] private MouseLook m_MouseLook;
+        [SerializeField] private TextMeshProUGUI m_SurvivalTimeText;
+        [SerializeField] private GameObject m_DeadMenu;
         private Camera m_Camera;
 
         Rigidbody m_Rigidbody;
 
         private float m_TimePressed = 0f;
+        private float m_SurvivalTime = 0f;
+
+        private Boolean m_IsDead = false;
 
         public float maxNotMovingDuration = 2f;
         public TextMeshProUGUI m_TextMeshPro;
 
         private void Start()
         {
+            m_DeadMenu.SetActive(false);
+
             m_Rigidbody = GetComponent<Rigidbody>();
 
             m_Camera = Camera.main;
@@ -53,6 +60,19 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
+            if (m_IsDead)
+            {
+                m_DeadMenu.SetActive(true);
+                m_TextMeshPro.text = "";
+                m_SurvivalTimeText.text = string.Format("Survival time: {0:0.00}s", m_SurvivalTime);
+                m_Character.Move(new Vector3(0, 0, 0), true, false);
+                return;
+            }
+            else
+            {
+                m_SurvivalTime += Time.deltaTime;
+            }
+
             RotateView();
             if (!m_Jump)
             {
@@ -64,6 +84,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         // Fixed update is called in sync with physics
         private void FixedUpdate()
         {
+            if (m_IsDead)
+            {
+                return;
+            }
 
             // read inputs
             //float h = CrossPlatformInputManager.GetAxis("Horizontal");
@@ -80,15 +104,21 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_TimePressed += Time.deltaTime;
 
                 float remainingTime = maxNotMovingDuration - m_TimePressed;
-                remainingTime = Mathf.Max(0, remainingTime);
+                remainingTime = Mathf.Max(0f, remainingTime);
 
                 m_TextMeshPro.text = string.Format("{0:0.00}", remainingTime);
-            }
 
-            if(m_TimePressed >= maxNotMovingDuration)
-            {
-                Debug.Log("hihi");
-                //m_TimePressed = 0f;
+                if (m_TimePressed >= maxNotMovingDuration)
+                {
+                    Debug.Log("hihi");
+                    //m_TimePressed = 0f;
+                }
+
+                if (remainingTime == 0f)
+                {
+                    m_IsDead = true;
+                    return;
+                }
             }
 
             // calculate move direction to pass to character
