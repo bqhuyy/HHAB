@@ -18,6 +18,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
         [SerializeField] private MouseLook m_MouseLook;
+        [SerializeField] private TextMeshProUGUI m_DeadMenuSurvivalTimeText;
         [SerializeField] private TextMeshProUGUI m_SurvivalTimeText;
         [SerializeField] private GameObject m_DeadMenu;
         private Camera m_Camera;
@@ -64,13 +65,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 m_DeadMenu.SetActive(true);
                 m_TextMeshPro.text = "";
-                m_SurvivalTimeText.text = string.Format("Survival time: {0:0.00}s", m_SurvivalTime);
+                m_DeadMenuSurvivalTimeText.text = string.Format("Survival time: {0:0.00}s", m_SurvivalTime);
                 m_Character.Move(new Vector3(0, 0, 0), true, false);
                 return;
             }
             else
             {
                 m_SurvivalTime += Time.deltaTime;
+                m_SurvivalTimeText.SetText(string.Format("Survival time: {0:0.00}s", m_SurvivalTime));
             }
 
             RotateView();
