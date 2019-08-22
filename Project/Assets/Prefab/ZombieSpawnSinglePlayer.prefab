@@ -44,6 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
-  radius: 10
-  numberZombie: 5
-  timeBetweenSpawn: 10
+  timeBetweenSpawn: 5
