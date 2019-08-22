@@ -14,16 +14,14 @@ public class SetupLocalPlayer : NetworkBehaviour
         {
             GetComponent<ThirdPersonCharacter>().enabled = true;
             GetComponent<ThirdPersonUserControl>().enabled = true;
+            GetComponent<BloodScreen>().enabled = true;
         }
         else
         {
+            GetComponent<ThirdPersonCharacter>().enabled = false;
+            GetComponent<ThirdPersonUserControl>().enabled = false;
+            GetComponent<BloodScreen>().enabled = false;
             cam.enabled = false;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

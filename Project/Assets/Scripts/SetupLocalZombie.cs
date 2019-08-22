@@ -14,5 +14,10 @@ public class SetupLocalZombie : NetworkBehaviour
             GetComponent<ThirdPersonCharacter>().enabled = true;
             GetComponent<AICharacterControl>().enabled = true;
         }
+        else
+        {
+            GetComponent<ThirdPersonCharacter>().enabled = false;
+            GetComponent<AICharacterControl>().enabled = false;
+        }
     }
 }

@@ -16,11 +16,5 @@ EditorBuildSettings:
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/InGameMultiplayerScene.unity
-    guid: 2ca584ccb5dac384a9dc13b7c383f91c
-  - enabled: 1
-    path: Assets/Scenes/SpawnZombieTestScene/InGameScene.unity
-    guid: 4c4c3bba190d9ec48be3e7df437e4ede
-  - enabled: 1
-    path: Assets/Scenes/SpawnZombieTestScene/InGameMultiplayerScene.unity
-    guid: c4df8f2c290b8424c8b826ac530eea67
+    guid: 3c64498266563034f9195faa9a579559
   m_configObjects: {}

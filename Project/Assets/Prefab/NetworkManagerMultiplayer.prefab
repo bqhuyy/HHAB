@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8523167637985530854}
   - component: {fileID: 8523167637985530853}
   - component: {fileID: 8523167637985530855}
-  - component: {fileID: 2765717074438672049}
   m_Layer: 0
   m_Name: NetworkManagerMultiplayer
   m_TagString: Untagged
@@ -54,10 +53,10 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 3166853261775239572, guid: be344cb44b7380a4bbab3a1721b58c17,
+  m_PlayerPrefab: {fileID: 3166853261775239572, guid: 7555e369d6dda44c99549a782612656d,
     type: 3}
   m_AutoCreatePlayer: 1
-  m_PlayerSpawnMethod: 0
+  m_PlayerSpawnMethod: 1
   m_OfflineScene: InGameMultiplayerScene
   m_OnlineScene: InGameMultiplayerScene
   m_SpawnPrefabs:
@@ -133,19 +132,3 @@ MonoBehaviour:
   showGUI: 1
   offsetX: 0
   offsetY: 0
---- !u!114 &2765717074438672049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8523167637985530852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 892f0c7af82355948a8b1453baf66dae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zombiePrefab: {fileID: 113348, guid: 1208524a538f20d4aabaa3671229fe6b, type: 3}
-  radius: 10
-  numberZombie: 10
-  timeBetweenSpawn: 5
