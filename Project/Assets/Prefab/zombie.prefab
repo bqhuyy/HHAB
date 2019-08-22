@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 11450346}
   m_Layer: 0
   m_Name: zombie
-  m_TagString: Untagged
+  m_TagString: zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,22 +152,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZombieRig
       objectReference: {fileID: 0}
-    - target: {fileID: 400120, guid: abfe6fc5a9b390a488839c1fc3b58dcd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.2496819
-      objectReference: {fileID: 0}
-    - target: {fileID: 400120, guid: abfe6fc5a9b390a488839c1fc3b58dcd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.014205298
-      objectReference: {fileID: 0}
-    - target: {fileID: 400122, guid: abfe6fc5a9b390a488839c1fc3b58dcd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.2496819
-      objectReference: {fileID: 0}
-    - target: {fileID: 400122, guid: abfe6fc5a9b390a488839c1fc3b58dcd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.014205298
-      objectReference: {fileID: 0}
     - target: {fileID: 400170, guid: abfe6fc5a9b390a488839c1fc3b58dcd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -223,6 +207,22 @@ PrefabInstance:
     - target: {fileID: 400170, guid: abfe6fc5a9b390a488839c1fc3b58dcd, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400120, guid: abfe6fc5a9b390a488839c1fc3b58dcd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2496819
+      objectReference: {fileID: 0}
+    - target: {fileID: 400120, guid: abfe6fc5a9b390a488839c1fc3b58dcd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.014205298
+      objectReference: {fileID: 0}
+    - target: {fileID: 400122, guid: abfe6fc5a9b390a488839c1fc3b58dcd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2496819
+      objectReference: {fileID: 0}
+    - target: {fileID: 400122, guid: abfe6fc5a9b390a488839c1fc3b58dcd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.014205298
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abfe6fc5a9b390a488839c1fc3b58dcd, type: 3}

@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 1377414949682547253}
   m_Layer: 0
   m_Name: zombieMultiplayer
-  m_TagString: Untagged
+  m_TagString: zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
