@@ -34,8 +34,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public float maxNotMovingDuration = 2f;
         public TextMeshProUGUI m_TextMeshPro;
 
+        public CapsuleCollider m_VirtualCollider;
+        public CapsuleCollider m_MainCollider;
+
         private void Start()
         {
+            Physics.IgnoreCollision(m_MainCollider, m_VirtualCollider, true);
+
             m_DeadMenu.SetActive(false);
 
             m_Rigidbody = GetComponent<Rigidbody>();
@@ -65,11 +70,20 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_MouseLook.Init(transform, m_Camera.transform);
         }
 
+        private void OnCollisionEnter(Collision collision)
+        {
+            if(collision.gameObject.tag.Equals("zombie"))
+            {
+                m_IsDead = true;
+            }
+        }
 
         private void Update()
         {
             if (m_IsDead)
             {
+                m_MouseLook.SetCursorLock(false);
+                m_Character.SetDead(true);
                 m_DeadMenu.SetActive(true);
                 m_TextMeshPro.text = "";
                 m_DeadMenuSurvivalTimeText.text = string.Format("Survival time: {0:0.00}s", m_SurvivalTime);
