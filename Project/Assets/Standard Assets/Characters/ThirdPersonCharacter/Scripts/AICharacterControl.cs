@@ -33,11 +33,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 character.Move(agent.desiredVelocity, false, false);
             else
                 character.Move(Vector3.zero, false, false);
+
+            FindClosestTarget();
         }
 
         private void FixedUpdate()
         {
-            FindClosestTarget();
+           // FindClosestTarget();
         }
 
         private void FindClosestTarget()
