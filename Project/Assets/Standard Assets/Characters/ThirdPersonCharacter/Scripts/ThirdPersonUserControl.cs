@@ -73,8 +73,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_DeadMenu.SetActive(true);
                 m_TextMeshPro.text = "";
                 m_DeadMenuSurvivalTimeText.text = string.Format("Survival time: {0:0.00}s", m_SurvivalTime);
-                m_Character.Move(new Vector3(0, 0, 0), true, false);
-                m_MouseLook.SetCursorLock(false);
+                //m_Character.Move(new Vector3(0, 0, 0), true, false);
 
                 if(m_Light != null)
                 {
@@ -133,6 +132,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 if (remainingTime == 0f)
                 {
                     m_IsDead = true;
+                    m_MouseLook.SetCursorLock(false);
+                    m_Character.SetDead(true);
                     return;
                 }
             }
