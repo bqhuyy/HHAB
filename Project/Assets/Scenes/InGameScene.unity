@@ -465,6 +465,16 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8005074093198990320, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555416602990233100, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50527617acfca403faaeb6372a3150ad, type: 3}
 --- !u!224 &1098232618 stripped
@@ -552,6 +562,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8709118943393747174, guid: df002b05b3c985343b06b3ffcadcc140,
+        type: 3}
+      propertyPath: zombiePrefab
+      value: 
+      objectReference: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df002b05b3c985343b06b3ffcadcc140, type: 3}
 --- !u!1 &2054025981
