@@ -28,6 +28,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
+        bool m_Dead;
 
 
 		void Start()
@@ -114,9 +115,23 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 		}
 
+        public void SetDead(bool value)
+        {
+            if(m_Dead)
+            {
+                return;
+            }
+            m_Dead = m_Dead || value;
+            m_Animator.SetBool("Dead", m_Dead);
+        }
+
 
 		void UpdateAnimator(Vector3 move)
 		{
+            if(m_Dead)
+            {
+                return;
+            }
 			// update the animator parameters
 			m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
 			m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
