@@ -22,6 +22,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         [SerializeField] private TextMeshProUGUI m_SurvivalTimeText;
         [SerializeField] private GameObject m_DeadMenu;
         private Camera m_Camera;
+        private Light m_Light;
 
         Rigidbody m_Rigidbody;
 
@@ -44,6 +45,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (Camera.main != null)
             {
                 m_Cam = Camera.main.transform;
+                m_Light = m_Camera.gameObject.transform.Find("GameObject").gameObject.GetComponent<Light>();
+
+                if(m_Light == null)
+                {
+                    Debug.Log("null light");
+                }
             }
             else
             {
@@ -68,6 +75,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_DeadMenuSurvivalTimeText.text = string.Format("Survival time: {0:0.00}s", m_SurvivalTime);
                 m_Character.Move(new Vector3(0, 0, 0), true, false);
                 m_MouseLook.SetCursorLock(false);
+
+                if(m_Light != null)
+                {
+                    //Debug.Log("light intensity = " + m_Light.intensity);
+                    m_Light.intensity = (1f - (1f / 60)) * m_Light.intensity;
+                }
                 return;
             }
             else
