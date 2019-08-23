@@ -261,6 +261,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8709118943393747174, guid: df002b05b3c985343b06b3ffcadcc140,
+        type: 3}
+      propertyPath: zombiePrefab
+      value: 
+      objectReference: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df002b05b3c985343b06b3ffcadcc140, type: 3}
 --- !u!1001 &183127859
@@ -330,6 +335,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8709118943393747174, guid: df002b05b3c985343b06b3ffcadcc140,
+        type: 3}
+      propertyPath: zombiePrefab
+      value: 
+      objectReference: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df002b05b3c985343b06b3ffcadcc140, type: 3}
 --- !u!1001 &652702774
@@ -399,6 +409,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8709118943393747174, guid: df002b05b3c985343b06b3ffcadcc140,
+        type: 3}
+      propertyPath: zombiePrefab
+      value: 
+      objectReference: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df002b05b3c985343b06b3ffcadcc140, type: 3}
 --- !u!1001 &746614229
@@ -468,6 +483,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8709118943393747174, guid: df002b05b3c985343b06b3ffcadcc140,
+        type: 3}
+      propertyPath: zombiePrefab
+      value: 
+      objectReference: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df002b05b3c985343b06b3ffcadcc140, type: 3}
 --- !u!1 &993853254
@@ -838,6 +858,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8709118943393747174, guid: df002b05b3c985343b06b3ffcadcc140,
+        type: 3}
+      propertyPath: zombiePrefab
+      value: 
+      objectReference: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df002b05b3c985343b06b3ffcadcc140, type: 3}
 --- !u!1001 &1658651656
@@ -907,6 +932,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8709118943393747174, guid: df002b05b3c985343b06b3ffcadcc140,
+        type: 3}
+      propertyPath: zombiePrefab
+      value: 
+      objectReference: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df002b05b3c985343b06b3ffcadcc140, type: 3}
 --- !u!1001 &1671377164
@@ -976,6 +1006,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8709118943393747174, guid: df002b05b3c985343b06b3ffcadcc140,
+        type: 3}
+      propertyPath: zombiePrefab
+      value: 
+      objectReference: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df002b05b3c985343b06b3ffcadcc140, type: 3}
 --- !u!1001 &1881473190
@@ -1045,6 +1080,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8709118943393747174, guid: df002b05b3c985343b06b3ffcadcc140,
+        type: 3}
+      propertyPath: zombiePrefab
+      value: 
+      objectReference: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df002b05b3c985343b06b3ffcadcc140, type: 3}
 --- !u!1 &2054025981
@@ -1189,5 +1229,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8709118943393747174, guid: df002b05b3c985343b06b3ffcadcc140,
+        type: 3}
+      propertyPath: zombiePrefab
+      value: 
+      objectReference: {fileID: 113348, guid: 39f9456c8a5c66e42aa41b1ee46dd0ca, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df002b05b3c985343b06b3ffcadcc140, type: 3}

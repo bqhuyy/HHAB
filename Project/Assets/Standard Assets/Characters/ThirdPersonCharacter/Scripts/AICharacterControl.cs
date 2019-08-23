@@ -23,11 +23,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             character.Move(target.position - transform.position, false, false);
         }
 
-        private void FixedUpdate()
-        {
-           // FindClosestTarget();
-        }
-
         private void FindClosestTarget()
         {
             GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
@@ -38,7 +33,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 foreach (GameObject player in players)
                 {
                     float tmp = Vector3.Distance(player.transform.position, gameObject.transform.position);
-                    if (tmp < minDistance)
+                    ThirdPersonCharacter thirdPersonCharacter = player.GetComponent<ThirdPersonCharacter>();
+                    if (tmp < minDistance && !thirdPersonCharacter.m_Dead)
                     {
                         minDistance = tmp;
                         currentTarget = player.transform;
