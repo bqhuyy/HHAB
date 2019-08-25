@@ -21,17 +21,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         [SerializeField] private TextMeshProUGUI m_DeadMenuSurvivalTimeText;
         [SerializeField] private TextMeshProUGUI m_SurvivalTimeText;
         [SerializeField] private GameObject m_DeadMenu;
-        private Camera m_Camera;
-        private Light m_Light;
+        [SerializeField] private Camera m_Camera;
+        [SerializeField] private Light m_Light;
 
         Rigidbody m_Rigidbody;
 
-        private float m_TimePressed = 0f;
-        private float m_SurvivalTime = 0f;
+        [SerializeField] private float m_TimePressed = 0f;
+        [SerializeField] private float m_SurvivalTime = 0f;
 
-        private Boolean m_IsDead = false;
+        [SerializeField] private Boolean m_IsDead = false;
 
-        public float maxNotMovingDuration = 2f;
+        [SerializeField] public float maxNotMovingDuration = 2f;
         public TextMeshProUGUI m_TextMeshPro;
 
         public CapsuleCollider m_VirtualCollider;
@@ -46,28 +46,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_Rigidbody = GetComponent<Rigidbody>();
 
             m_Camera = Camera.main;
-            // get the transform of the main camera
-            if (Camera.main != null)
-            {
-                m_Cam = Camera.main.transform;
-                m_Light = m_Camera.gameObject.transform.Find("GameObject").gameObject.GetComponent<Light>();
-
-                if(m_Light == null)
-                {
-                    Debug.Log("null light");
-                }
-            }
-            else
-            {
-                Debug.LogWarning(
-                    "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.", gameObject);
-                // we use self-relative controls in this case, which probably isn't what the user wants, but hey, we warned them!
-            }
-
-            // get the third person character ( this should never be null due to require component )
             m_Character = GetComponent<ThirdPersonCharacter>();
-
             m_MouseLook.Init(transform, m_Camera.transform);
+            m_Cam = Camera.main.transform;
+            m_Light = GameObject.Find("HeadLight").GetComponent<Light>();
         }
 
         private void OnCollisionEnter(Collision collision)
@@ -101,29 +83,19 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_SurvivalTime += Time.deltaTime;
                 m_SurvivalTimeText.SetText(string.Format("Survival time: {0:0.00}s", m_SurvivalTime));
             }
-
-            RotateView();
+            m_MouseLook.LookRotation(transform, m_Camera.transform);
+            Debug.LogError(transform.position.ToString());
+            Debug.LogError(m_Camera.transform.position.ToString());
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-            }
-        }
-
-
-        // Fixed update is called in sync with physics
-        private void FixedUpdate()
-        {
-            if (m_IsDead)
-            {
-                return;
             }
 
             // read inputs
             //float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
             bool crouch = Input.GetKey(KeyCode.C);
-
-            if(v > 0 && m_Rigidbody.velocity.magnitude > 0)
+            if (v > 0 && m_Rigidbody.velocity.magnitude > 0)
             {
                 m_TimePressed = 0f;
                 m_TextMeshPro.text = "";
@@ -151,7 +123,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                     return;
                 }
             }
-
             // calculate move direction to pass to character
             if (m_Cam != null)
             {
@@ -164,21 +135,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 // we use world-relative directions in the case of no main camera
                 m_Move = v * Vector3.forward;// + h*Vector3.right;
             }
-#if !MOBILE_INPUT
-			// walk speed multiplier
-	        if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
-#endif
-
             // pass all parameters to the character control script
             m_Character.Move(m_Move, crouch, m_Jump);
             m_Jump = false;
-
             m_MouseLook.UpdateCursorLock();
-        }
-
-        private void RotateView()
-        {
-            m_MouseLook.LookRotation(transform, m_Camera.transform);
         }
     }
 }
