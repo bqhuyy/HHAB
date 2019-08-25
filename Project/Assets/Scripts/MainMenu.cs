@@ -5,14 +5,16 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
     public SceneFader fader;
-    public GameObject audioSource;
+    public GameObject horrorSound;
+    public GameObject rainSound;
 
     const string multiplayerScene = "MultiplayerScene";
     const string inGameScene = "InGameScene";
 
     private void Start()
     {
-        DontDestroyOnLoad(audioSource);
+        DontDestroyOnLoad(horrorSound);
+        DontDestroyOnLoad(rainSound);
     }
 
     public void Play()
