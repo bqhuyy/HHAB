@@ -22,6 +22,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         [SerializeField] private TextMeshProUGUI m_SurvivalTimeText;
         [SerializeField] private GameObject m_DeadMenu;
         private Camera m_Camera;
+        [SerializeField] private GameObject m_GameObjectLight;
         private Light m_Light;
 
         Rigidbody m_Rigidbody;
@@ -50,7 +51,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (Camera.main != null)
             {
                 m_Cam = Camera.main.transform;
-                m_Light = m_Camera.gameObject.transform.Find("GameObject").gameObject.GetComponent<Light>();
+                m_Light = m_GameObjectLight.GetComponent<Light>();
 
                 if(m_Light == null)
                 {

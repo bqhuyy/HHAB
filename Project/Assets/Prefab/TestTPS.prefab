@@ -1208,6 +1208,10 @@ PrefabInstance:
       propertyPath: m_VirtualCollider
       value: 
       objectReference: {fileID: 9133602160197417834}
+    - target: {fileID: 11444856, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_GameObjectLight
+      value: 
+      objectReference: {fileID: 4630278568972742778}
     - target: {fileID: 11469404, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_Enabled
       value: 1
