@@ -319,7 +319,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Survival time: 6.73s'
+  m_text: 'Survival time: 5.01s'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52605bc15a0407e479905c7b32f0e744, type: 2}
   m_sharedMaterial: {fileID: -7917168584851068831, guid: 52605bc15a0407e479905c7b32f0e744,
@@ -578,7 +578,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 3.86
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f175a84fd8128a41b46f8f797a24bae, type: 2}
   m_sharedMaterial: {fileID: 7937138626325009679, guid: 8f175a84fd8128a41b46f8f797a24bae,
@@ -1160,6 +1160,11 @@ PrefabInstance:
       propertyPath: m_subTextObjects.Array.data[4]
       value: 
       objectReference: {fileID: 4227641502141446134}
+    - target: {fileID: 4742100906685125024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_text
+      value: 'Survival time: 5.01s'
+      objectReference: {fileID: 0}
     - target: {fileID: 4742100906812782768, guid: baf5c873fcbc72c458ff0b7b7032d48a,
         type: 3}
       propertyPath: m_Name
@@ -1168,7 +1173,7 @@ PrefabInstance:
     - target: {fileID: 4742100906812782768, guid: baf5c873fcbc72c458ff0b7b7032d48a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4742100906685125025, guid: baf5c873fcbc72c458ff0b7b7032d48a,
         type: 3}
