@@ -68,6 +68,26 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &-265334469143092155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3166853261775239572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18e15ed5495c434d969378156376a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 0}
+  m_ParameterSendBits: 0
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
 --- !u!1001 &1222570303381339568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81,6 +101,11 @@ PrefabInstance:
       value: TPSMouseSpotLight3
       objectReference: {fileID: 0}
     - target: {fileID: 1277957082078888556, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252978552963002178, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -112,14 +137,29 @@ PrefabInstance:
       objectReference: {fileID: 2827250296722614671}
     - target: {fileID: 4252978552963002178, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
+      propertyPath: maxNotMovingDuration
+      value: 500000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252978552963002178, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
       propertyPath: m_TextMeshPro
       value: 
       objectReference: {fileID: 3297221296976977583}
+    - target: {fileID: 4252978552963026790, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4252978552960083810, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 6996385895b383749b266464bf872c69, type: 3}
+    - target: {fileID: 4252978552955895924, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 4252978552953008544, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_LocalPosition.x

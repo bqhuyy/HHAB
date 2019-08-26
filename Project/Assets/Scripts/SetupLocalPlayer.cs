@@ -21,6 +21,7 @@ public class SetupLocalPlayer : NetworkBehaviour
             GetComponent<ThirdPersonUserControl>().enabled = false;
             GetComponent<BloodScreen>().enabled = false;
             cam.enabled = false;
+            gameObject.transform.Find("Canvas").gameObject.SetActive(false);
         }
     }
 }
