@@ -35,7 +35,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 446130210063994353}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54,119 +55,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
-  m_WarningMessage: '
-
-    Transform ''EthanLeftToe1'' has been deleted
-
-    Transform ''EthanLeftFoot'' has been deleted
-
-    Transform ''EthanLeftLeg'' has been deleted
-
-    Transform ''EthanLeftUpLeg'' has been deleted
-
-    Transform ''EthanRightToe1'' has been deleted
-
-    Transform ''EthanRightFoot'' has been deleted
-
-    Transform ''EthanRightLeg'' has been deleted
-
-    Transform ''EthanRightUpLeg'' has been deleted
-
-    Transform ''EthanJaw'' has been deleted
-
-    Transform ''EthanLeftEye'' has been deleted
-
-    Transform ''EthanRightEye'' has been deleted
-
-    Transform ''EthanHead'' has been deleted
-
-    Transform ''EthanLeftHandIndex3'' has been deleted
-
-    Transform ''EthanLeftHandIndex2'' has been deleted
-
-    Transform ''EthanLeftHandIndex1'' has been deleted
-
-    Transform ''EthanLeftHandMiddle3'' has been deleted
-
-    Transform ''EthanLeftHandMiddle2'' has been deleted
-
-    Transform ''EthanLeftHandMiddle1'' has been deleted
-
-    Transform ''EthanLeftHandPinky3'' has been deleted
-
-    Transform ''EthanLeftHandPinky2'' has been deleted
-
-    Transform ''EthanLeftHandPinky1'' has been deleted
-
-    Transform ''EthanLeftHandRing3'' has been deleted
-
-    Transform ''EthanLeftHandRing2'' has been deleted
-
-    Transform ''EthanLeftHandRing1'' has been deleted
-
-    Transform ''EthanLeftHandThumb3'' has been deleted
-
-    Transform ''EthanLeftHandThumb2'' has been deleted
-
-    Transform ''EthanLeftHandThumb1'' has been deleted
-
-    Transform ''EthanLeftHand'' has been deleted
-
-    Transform ''EthanLeftForeArm'' has been deleted
-
-    Transform ''EthanLeftArm'' has been deleted
-
-    Transform ''EthanLeftShoulder'' has been deleted
-
-    Transform ''EthanRightHandIndex3'' has been deleted
-
-    Transform ''EthanRightHandIndex2'' has been deleted
-
-    Transform ''EthanRightHandIndex1'' has been deleted
-
-    Transform ''EthanRightHandMiddle3'' has been deleted
-
-    Transform ''EthanRightHandMiddle2'' has been deleted
-
-    Transform ''EthanRightHandMiddle1'' has been deleted
-
-    Transform ''EthanRightHandPinky3'' has been deleted
-
-    Transform ''EthanRightHandPinky2'' has been deleted
-
-    Transform ''EthanRightHandPinky1'' has been deleted
-
-    Transform ''EthanRightHandRing3'' has been deleted
-
-    Transform ''EthanRightHandRing2'' has been deleted
-
-    Transform ''EthanRightHandRing1'' has been deleted
-
-    Transform ''EthanRightHandThumb3'' has been deleted
-
-    Transform ''EthanRightHandThumb2'' has been deleted
-
-    Transform ''EthanRightHandThumb1'' has been deleted
-
-    Transform ''EthanRightHand'' has been deleted
-
-    Transform ''EthanRightForeArm'' has been deleted
-
-    Transform ''EthanRightArm'' has been deleted
-
-    Transform ''EthanRightShoulder'' has been deleted
-
-    Transform ''EthanNeck'' has been deleted
-
-    Transform ''EthanSpine2'' has been deleted
-
-    Transform ''EthanSpine1'' has been deleted
-
-    Transform ''EthanSpine'' has been deleted
-
-    Transform ''EthanHips'' has been deleted
-
-    Transform ''EthanSkeleton'' has been deleted'
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -221,8 +110,18 @@ MonoBehaviour:
     smooth: 0
     smoothTime: 5
     lockCursor: 1
+  m_DeadMenuSurvivalTimeText: {fileID: 0}
+  m_SurvivalTimeText: {fileID: 0}
+  m_DeadMenu: {fileID: 0}
+  m_Camera: {fileID: 0}
+  m_Light: {fileID: 0}
+  m_TimePressed: 0
+  m_SurvivalTime: 0
+  m_IsDead: 0
   maxNotMovingDuration: 2
   m_TextMeshPro: {fileID: 0}
+  m_VirtualCollider: {fileID: 0}
+  m_MainCollider: {fileID: 0}
 --- !u!114 &11469404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,3 +224,253 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!1001 &1828664441913472921
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 408730}
+    m_Modifications:
+    - target: {fileID: 2256375504335321708, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188387517335958, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188387517335958, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188387517335958, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188387517335958, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188387517335958, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188388121375646, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188388121375646, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188388121375646, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188388121375646, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188388121375646, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188388121375646, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.materialCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188387375030998, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188387375030998, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188387375030998, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188387375030998, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188386659827318, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188386659827318, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188386659827318, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188386659827318, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818188386659827318, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504314211700, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504314211700, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504314211700, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504314211700, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2256375504314211700, guid: 96f01d0e26bda48549e413c76ce92238,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96f01d0e26bda48549e413c76ce92238, type: 3}
+--- !u!224 &446130210063994353 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2256375504335321704, guid: 96f01d0e26bda48549e413c76ce92238,
+    type: 3}
+  m_PrefabInstance: {fileID: 1828664441913472921}
+  m_PrefabAsset: {fileID: 0}

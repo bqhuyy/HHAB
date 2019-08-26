@@ -14,7 +14,6 @@ public class SetupLocalPlayer : NetworkBehaviour
         {
             GetComponent<ThirdPersonCharacter>().enabled = true;
             GetComponent<ThirdPersonUserControl>().enabled = true;
-            GetComponent<BloodScreen>().enabled = true;
         }
         else
         {
