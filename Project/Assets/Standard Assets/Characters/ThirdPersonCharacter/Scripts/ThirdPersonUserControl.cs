@@ -84,8 +84,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_SurvivalTimeText.SetText(string.Format("Survival time: {0:0.00}s", m_SurvivalTime));
             }
             m_MouseLook.LookRotation(transform, m_Camera.transform);
-            Debug.LogError(transform.position.ToString());
-            Debug.LogError(m_Camera.transform.position.ToString());
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");

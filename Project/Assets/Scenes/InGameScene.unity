@@ -194,80 +194,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &55235457
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 55235458}
-  - component: {fileID: 55235460}
-  - component: {fileID: 55235459}
-  m_Layer: 5
-  m_Name: TMP SubMeshUI [who asks satan SDF Material + LiberationSans SDF Atlas]
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &55235458
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55235457}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1098232618}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &55235459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55235457}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 1.25
-  m_canvasRenderer: {fileID: 55235460}
-  m_TextComponent: {fileID: 1098232619}
-  m_materialReferenceIndex: 1
---- !u!222 &55235460
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55235457}
-  m_CullTransparentMesh: 0
 --- !u!1001 &73634892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -991,80 +917,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857005446}
   m_CullTransparentMesh: 0
---- !u!1 &993853254
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 993853255}
-  - component: {fileID: 993853257}
-  - component: {fileID: 993853256}
-  m_Layer: 5
-  m_Name: TMP SubMeshUI [who asks satan SDF Material + LiberationSans SDF Atlas]
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &993853255
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993853254}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1098232618}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &993853256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993853254}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 1.25
-  m_canvasRenderer: {fileID: 993853257}
-  m_TextComponent: {fileID: 1098232619}
-  m_materialReferenceIndex: 1
---- !u!222 &993853257
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993853254}
-  m_CullTransparentMesh: 0
 --- !u!1001 &1011563298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1285,7 +1137,7 @@ PrefabInstance:
     - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
       propertyPath: maxNotMovingDuration
-      value: 50000
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
@@ -1330,17 +1182,22 @@ PrefabInstance:
     - target: {fileID: 93245214755241948, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 93245214755241948, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_TextMeshPro
+      value: 
+      objectReference: {fileID: 1475598656}
     - target: {fileID: 5635892102302390995, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5713063849865720738, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1560600792613159683, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
@@ -1355,24 +1212,6 @@ Light:
     type: 3}
   m_PrefabInstance: {fileID: 1011563298}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1098232618 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1555679009526622792, guid: 50527617acfca403faaeb6372a3150ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 1011563298}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1098232619 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1555679009526622793, guid: 50527617acfca403faaeb6372a3150ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 1011563298}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1153833033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1617,6 +1456,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 844298900}
     m_Modifications:
+    - target: {fileID: 4742100906812782768, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_Name
+      value: DeadMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742100906812782768, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4742100906812782771, guid: baf5c873fcbc72c458ff0b7b7032d48a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1782,16 +1631,6 @@ PrefabInstance:
       propertyPath: m_subTextObjects.Array.data[4]
       value: 
       objectReference: {fileID: 1479729861}
-    - target: {fileID: 4742100906812782768, guid: baf5c873fcbc72c458ff0b7b7032d48a,
-        type: 3}
-      propertyPath: m_Name
-      value: DeadMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 4742100906812782768, guid: baf5c873fcbc72c458ff0b7b7032d48a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4742100906685125025, guid: baf5c873fcbc72c458ff0b7b7032d48a,
         type: 3}
       propertyPath: m_SizeDelta.x

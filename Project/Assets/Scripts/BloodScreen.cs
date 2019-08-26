@@ -59,7 +59,7 @@ public class BloodScreen : MonoBehaviour {
         if (m_TextMeshPro.text != "")
         {
             float remainingTime = float.Parse(m_TextMeshPro.text);
-            if (System.Math.Abs(remainingTime - Mathf.FloorToInt(remainingTime)) < Mathf.Epsilon)
+            if (Mathf.Abs(remainingTime - Mathf.FloorToInt(remainingTime)) < 0.05f)
             {
                 bloodRainController.Attack(30);
             }
