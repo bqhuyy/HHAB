@@ -345,6 +345,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: TPSMouseSpotLight4
       objectReference: {fileID: 0}
+    - target: {fileID: 3297221296530357627, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297221296517896807, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2898914bd9f76aa46bd3586d82b16402,
+        type: 2}
+    - target: {fileID: 3297221296517896807, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5059318280264338634, guid: 2898914bd9f76aa46bd3586d82b16402,
+        type: 2}
+    - target: {fileID: 3297221296976977583, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2898914bd9f76aa46bd3586d82b16402,
+        type: 2}
+    - target: {fileID: 3297221296976977583, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5059318280264338634, guid: 2898914bd9f76aa46bd3586d82b16402,
+        type: 2}
     - target: {fileID: 1537053067536305896, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
       propertyPath: fader
@@ -359,6 +388,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297221296128307946, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_Name
+      value: TMP SubMeshUI [BLOODSEEKER - DEMO SDF Material + LiberationSans SDF Atlas]
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50527617acfca403faaeb6372a3150ad, type: 3}

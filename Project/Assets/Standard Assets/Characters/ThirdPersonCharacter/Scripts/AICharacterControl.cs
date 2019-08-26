@@ -40,7 +40,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                         currentTarget = player.transform;
                     }
                 }
-                Debug.Log(currentTarget);
                 this.SetTarget(currentTarget);
             }
         }

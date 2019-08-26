@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1128411089557517985}
   - component: {fileID: 6531781424624989373}
   m_Layer: 5
-  m_Name: TMP SubMeshUI [who asks satan SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [BLOODSEEKER - DEMO SDF Material + LiberationSans SDF Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -616,8 +616,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Survival time: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 52605bc15a0407e479905c7b32f0e744, type: 2}
-  m_sharedMaterial: {fileID: -7917168584851068831, guid: 52605bc15a0407e479905c7b32f0e744,
+  m_fontAsset: {fileID: 11400000, guid: 2898914bd9f76aa46bd3586d82b16402, type: 2}
+  m_sharedMaterial: {fileID: -5059318280264338634, guid: 2898914bd9f76aa46bd3586d82b16402,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -660,7 +660,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 15
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -689,7 +689,7 @@ MonoBehaviour:
     spaceCount: 2
     wordCount: 3
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 2
   m_isUsingLegacyAnimationComponent: 0
