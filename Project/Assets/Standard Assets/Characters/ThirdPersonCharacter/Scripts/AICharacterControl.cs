@@ -29,17 +29,18 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (players.Length > 0)
             {
                 float minDistance = Vector3.Distance(players[0].transform.position, gameObject.transform.position);
-                Transform currentTarget = players[0].transform;
+                Transform currentTarget = null;
                 foreach (GameObject player in players)
                 {
                     float tmp = Vector3.Distance(player.transform.position, gameObject.transform.position);
                     ThirdPersonCharacter thirdPersonCharacter = player.GetComponent<ThirdPersonCharacter>();
-                    if (tmp < minDistance && !thirdPersonCharacter.m_Dead)
+                    if (tmp <= minDistance && !thirdPersonCharacter.m_Dead)
                     {
                         minDistance = tmp;
                         currentTarget = player.transform;
                     }
                 }
+                Debug.Log(currentTarget);
                 this.SetTarget(currentTarget);
             }
         }
