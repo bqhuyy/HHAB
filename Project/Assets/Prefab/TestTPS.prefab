@@ -904,6 +904,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3078679029681327958, guid: 7737647c22c1fc64a88d5cd030c352ce,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078679029681327958, guid: 7737647c22c1fc64a88d5cd030c352ce,
+        type: 3}
+      propertyPath: bloodRainController
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3078679029681327958, guid: 7737647c22c1fc64a88d5cd030c352ce,
+        type: 3}
+      propertyPath: m_TextMeshPro
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9579096, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_Avatar
       value: 
@@ -944,21 +959,6 @@ PrefabInstance:
       propertyPath: m_JumpPower
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 3078679029681327958, guid: 7737647c22c1fc64a88d5cd030c352ce,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3078679029681327958, guid: 7737647c22c1fc64a88d5cd030c352ce,
-        type: 3}
-      propertyPath: bloodRainController
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3078679029681327958, guid: 7737647c22c1fc64a88d5cd030c352ce,
-        type: 3}
-      propertyPath: m_TextMeshPro
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 127968, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -994,63 +994,6 @@ CapsuleCollider:
     type: 3}
   m_PrefabInstance: {fileID: 4252978552952606010}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6899392015392432908
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 4252978552953008544}
-    m_Modifications:
-    - target: {fileID: 175390, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_Name
-      value: BloodRain
-      objectReference: {fileID: 0}
-    - target: {fileID: 425372, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 425372, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 425372, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 425372, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 425372, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 425372, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 425372, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 425372, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 425372, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 425372, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 425372, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 544f43d0e25f0e644b1812b4e8827527, type: 3}
 --- !u!1001 &7320747330180661870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1101,7 +1044,7 @@ PrefabInstance:
     - target: {fileID: 4274652728013945979, guid: a21604b981596423eac204378cba6ae2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4274652728013945979, guid: a21604b981596423eac204378cba6ae2,
         type: 3}

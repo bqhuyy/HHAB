@@ -24,6 +24,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         [SerializeField] private Camera m_Camera;
         [SerializeField] private Light m_Light;
 
+        private float m_MaxLightIntensity = 10f;
+
         Rigidbody m_Rigidbody;
 
         [SerializeField] private float m_TimePressed = 0f;
@@ -97,6 +99,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 m_TimePressed = 0f;
                 m_TextMeshPro.text = "";
+                m_Light.intensity = m_MaxLightIntensity;
             }
             else
             {
@@ -106,6 +109,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 remainingTime = Mathf.Max(0f, remainingTime);
 
                 m_TextMeshPro.text = string.Format("{0:0.00}", remainingTime);
+
+                float intensityRatio = remainingTime / maxNotMovingDuration;
+                m_Light.intensity = intensityRatio * intensityRatio * m_MaxLightIntensity;
 
                 if (m_TimePressed >= maxNotMovingDuration)
                 {
