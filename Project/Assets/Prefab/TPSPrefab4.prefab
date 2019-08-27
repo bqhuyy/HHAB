@@ -623,7 +623,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000030517578, y: -43.5}
-  m_SizeDelta: {x: 238.1, y: 87}
+  m_SizeDelta: {x: 500, y: 87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6921492858701854920
 CanvasRenderer:
@@ -728,7 +728,7 @@ MonoBehaviour:
     spaceCount: 0
     wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -753,6 +753,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6921492857642337027}
     m_Modifications:
+    - target: {fileID: 3166853261775239572, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_Name
+      value: TPSMouseSpotLight4
+      objectReference: {fileID: 0}
     - target: {fileID: 3166853261774949392, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -808,10 +813,80 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3166853261775239572, guid: 50527617acfca403faaeb6372a3150ad,
+    - target: {fileID: 3297221296530357627, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3297221296128307946, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
       propertyPath: m_Name
-      value: TPSMouseSpotLight4
+      value: TMP SubMeshUI [BLOODSEEKER - DEMO SDF Material + LiberationSans SDF Atlas]
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 8424873156233724918}
+    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_Light
+      value: 
+      objectReference: {fileID: 5130299537275990820}
+    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: maxNotMovingDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_DeadMenu
+      value: 
+      objectReference: {fileID: 2432303009413250043}
+    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_TextMeshPro
+      value: 
+      objectReference: {fileID: 6921492858701854921}
+    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_SurvivalTimeText
+      value: 
+      objectReference: {fileID: 6921492858104232961}
+    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_DeadMenuSurvivalTimeText
+      value: 
+      objectReference: {fileID: 2432303009335923435}
+    - target: {fileID: 93245214755241948, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 93245214755241948, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_TextMeshPro
+      value: 
+      objectReference: {fileID: 6921492858701854921}
+    - target: {fileID: 93245214755241948, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: bloodRainController
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7785957304715523213, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5815691817467055562, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_Name
+      value: HeadLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635892102302390995, guid: 50527617acfca403faaeb6372a3150ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1555679009526622793, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
@@ -953,46 +1028,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 8424873156233724918}
-    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_Light
-      value: 
-      objectReference: {fileID: 5130299537275990820}
-    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: maxNotMovingDuration
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_DeadMenu
-      value: 
-      objectReference: {fileID: 2432303009413250043}
-    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_TextMeshPro
-      value: 
-      objectReference: {fileID: 6921492858701854921}
-    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_SurvivalTimeText
-      value: 
-      objectReference: {fileID: 6921492858104232961}
-    - target: {fileID: 3166853261765022450, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_DeadMenuSurvivalTimeText
-      value: 
-      objectReference: {fileID: 2432303009335923435}
-    - target: {fileID: 5815691817467055562, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_Name
-      value: HeadLight
-      objectReference: {fileID: 0}
     - target: {fileID: 188678142714710845, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
       propertyPath: m_Enabled
@@ -1008,11 +1043,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5635892102302390995, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5713063849865720738, guid: 50527617acfca403faaeb6372a3150ad,
         type: 3}
       propertyPath: m_IsActive
@@ -1027,36 +1057,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 93245214755241948, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 93245214755241948, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_TextMeshPro
-      value: 
-      objectReference: {fileID: 6921492858701854921}
-    - target: {fileID: 93245214755241948, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: bloodRainController
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3297221296530357627, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7785957304715523213, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_firstOverflowCharacterIndex
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3297221296128307946, guid: 50527617acfca403faaeb6372a3150ad,
-        type: 3}
-      propertyPath: m_Name
-      value: TMP SubMeshUI [BLOODSEEKER - DEMO SDF Material + LiberationSans SDF Atlas]
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50527617acfca403faaeb6372a3150ad, type: 3}
@@ -1085,6 +1085,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6921492858125064989}
     m_Modifications:
+    - target: {fileID: 4742100906812782768, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_Name
+      value: DeadMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742100906812782768, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4742100906812782771, guid: baf5c873fcbc72c458ff0b7b7032d48a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1205,6 +1215,41 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4742100906685125025, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281989538603974117, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742100906215386024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742100906215386024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742100906215386024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742100906215386024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742100906215386024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4742100906685125024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1250,54 +1295,9 @@ PrefabInstance:
       propertyPath: m_subTextObjects.Array.data[4]
       value: 
       objectReference: {fileID: 4227641502141446134}
-    - target: {fileID: 4742100906812782768, guid: baf5c873fcbc72c458ff0b7b7032d48a,
-        type: 3}
-      propertyPath: m_Name
-      value: DeadMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 4742100906812782768, guid: baf5c873fcbc72c458ff0b7b7032d48a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4742100906685125025, guid: baf5c873fcbc72c458ff0b7b7032d48a,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 450
-      objectReference: {fileID: 0}
-    - target: {fileID: 7281989538603974117, guid: baf5c873fcbc72c458ff0b7b7032d48a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 6531781424624989373, guid: baf5c873fcbc72c458ff0b7b7032d48a,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4742100906215386024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4742100906215386024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4742100906215386024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4742100906215386024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4742100906215386024, guid: baf5c873fcbc72c458ff0b7b7032d48a,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4742100905260866632, guid: baf5c873fcbc72c458ff0b7b7032d48a,

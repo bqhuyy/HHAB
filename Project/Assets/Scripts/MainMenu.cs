@@ -13,7 +13,6 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        DontDestroyOnLoad(horrorSound);
         DontDestroyOnLoad(rainSound);
     }
 
