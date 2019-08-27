@@ -57,6 +57,10 @@ namespace Prototype.NetworkLobby
 
         void Start()
         {
+            StopHost();
+            StopClient();
+            StopServer();
+
             s_Singleton = this;
             _lobbyHooks = GetComponent<Prototype.NetworkLobby.LobbyHook>();
             currentPanel = mainMenuPanel;
