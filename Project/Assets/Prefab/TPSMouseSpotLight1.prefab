@@ -138,28 +138,18 @@ PrefabInstance:
     - target: {fileID: 4252978552963002178, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: maxNotMovingDuration
-      value: 50000
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4252978552963002178, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_TextMeshPro
       value: 
       objectReference: {fileID: 3297221296976977583}
-    - target: {fileID: 4252978552963026790, guid: f71761172e48a4c30878cd3f231ac875,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4252978552960083810, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 69e0bf832ba8212478b45616cc569f75, type: 3}
-    - target: {fileID: 4252978552955895924, guid: f71761172e48a4c30878cd3f231ac875,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
     - target: {fileID: 4252978552953008544, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -215,11 +205,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4410541885638508747, guid: f71761172e48a4c30878cd3f231ac875,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 1601902482486280110, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_IsActive
@@ -234,6 +219,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4410541885638508747, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252978552955895924, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252978552963026790, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f71761172e48a4c30878cd3f231ac875, type: 3}
