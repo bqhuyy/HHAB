@@ -145,11 +145,21 @@ PrefabInstance:
       propertyPath: m_TextMeshPro
       value: 
       objectReference: {fileID: 3297221296976977583}
+    - target: {fileID: 4252978552963026790, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4252978552960083810, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 69e0bf832ba8212478b45616cc569f75, type: 3}
+    - target: {fileID: 4252978552955895924, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 4252978552953008544, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -205,10 +215,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4410541885650708439, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2898914bd9f76aa46bd3586d82b16402,
+        type: 2}
+    - target: {fileID: 4410541885650708439, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5059318280264338634, guid: 2898914bd9f76aa46bd3586d82b16402,
+        type: 2}
+    - target: {fileID: 4410541885638508747, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4410541885638508747, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005571823216183613, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1601902482486280110, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4410541887339242336, guid: f71761172e48a4c30878cd3f231ac875,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2473475127944656501, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
@@ -220,20 +262,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.6
       objectReference: {fileID: 0}
-    - target: {fileID: 4410541885638508747, guid: f71761172e48a4c30878cd3f231ac875,
+    - target: {fileID: 4410541885234925402, guid: f71761172e48a4c30878cd3f231ac875,
         type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4252978552955895924, guid: f71761172e48a4c30878cd3f231ac875,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 4252978552963026790, guid: f71761172e48a4c30878cd3f231ac875,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
+      propertyPath: m_Name
+      value: TMP SubMeshUI [BLOODSEEKER - DEMO SDF Material + LiberationSans SDF Atlas]
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f71761172e48a4c30878cd3f231ac875, type: 3}

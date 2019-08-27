@@ -236,5 +236,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Animator.applyRootMotion = false;
 			}
 		}
-	}
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.tag == "Player")
+            {
+                Physics.IgnoreCollision(collision.collider, gameObject.GetComponent<Collider>());
+            }
+        }
+    }
 }

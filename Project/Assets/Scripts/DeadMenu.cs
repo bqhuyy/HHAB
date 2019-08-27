@@ -5,7 +5,7 @@ using UnityEngine;
 public class DeadMenu : MonoBehaviour
 {
     public SceneFader fader;
-    const string multiplayerScene = "MultiplayerScene";
+    const string mainMenuScene = "MainMenuScene";
     // Start is called before the first frame update
     private void Start()
     {
@@ -19,6 +19,7 @@ public class DeadMenu : MonoBehaviour
 
     public void BackToMenu()
     {
-        fader.FadeTo(multiplayerScene);
+        Destroy(GameObject.Find("LobbyManager"));
+        fader.FadeTo(mainMenuScene);
     }
 }
