@@ -1,31 +1,46 @@
 # HHAB
 
-## Unity assets
+## Intruction
+The world has been infected by a virus, that could spread and has created an enormous zombie apocalypse. The main character, **H2AB**, is hiding in a dark wood, with no equipment to fight back. How long can he survive? Only god knows.
+
+
+![Poster](https://github.com/bqhuyy/HHAB/blob/master/Marketing/poster.png?raw=true)
+
+## Requirement
+* Unity version: **2019.2.0f1**
+* WebGL
+
+## Information
+* [Bùi Quốc Huy](https://github.com/bqhuyy), 1651076 - Team leader: providing ideas and resources for members.
+* [Đỗ Thái Bảo](https://github.com/bendoppler), 1651059 - Terrain and map builder.
+* [Phạm Việt An](https://github.com/phvietan), 1651042 - Network management for multiplayer and enemy spawn mechanism (and report writer).
+* [Hoàng Đình Hiếu](https://github.com/DinhHieuHoang), 1651045 - Scripting for main character and enemies.
+
+Along the project every members also help others when in need, so I would like to emphasize that the roles above are not everything they do for the project.
+
+
+## Demo
+* [WebGL](https://bqhuyy.github.io/HHAB/Project/Build/WebGL/index.html)
+* [Windows](https://github.com/bqhuyy/HHAB/tree/master/Project/Build/Windows)
+
+## Resources references
 
 1. Environment
-* [Autumn Mountain](https://assetstore.unity.com/packages/3d/environments/landscapes/autumn-mountain-52251)
-* [Post-apocalyptic Truck with Armor](https://assetstore.unity.com/packages/3d/vehicles/land/post-apocalyptic-truck-with-armor-45422)
-* [Basic Truck](https://assetstore.unity.com/packages/3d/vehicles/land/basic-truck-14042)
-* [Transport Helicopter](https://assetstore.unity.com/packages/3d/vehicles/air/transport-helicopter-3911)
-* [Realistic Tree 9 [Rainbow Tree]](https://assetstore.unity.com/packages/3d/vegetation/trees/realistic-tree-9-rainbow-tree-54622)
-* [Flooded Grounds](https://assetstore.unity.com/packages/3d/environments/flooded-grounds-48529)
-* [Free Rocks](https://assetstore.unity.com/packages/3d/environments/landscapes/free-rocks-19288)
-* [Fantasy Forest Environment - Free Demo](https://assetstore.unity.com/packages/3d/environments/fantasy/fantasy-forest-environment-free-demo-35361)
-* [4 Snow Materials [High Quality] [Materials Collection]](https://assetstore.unity.com/packages/2d/textures-materials/4-snow-materials-high-quality-materials-collection-69201)
+* [Urban night sky](https://assetstore.unity.com/packages/2d/textures-materials/sky/urban-night-sky-134468)
+* [Nature starter kit 2](https://assetstore.unity.com/packages/3d/environments/nature-starter-kit-2-52977) 
+* [Rain drop effect 2](https://assetstore.unity.com/packages/vfx/shaders/fullscreen-camera-effects/rain-drop-effect-2-59986)
 
-2. Player
+2. Zombie
+* [Zombie Animation Pack Free](https://assetstore.unity.com/packages/3d/animations/zombie-animation-pack-free-150219)
+* [Modern Zombie Free](https://assetstore.unity.com/packages/3d/characters/humanoids/modern-zombie-free-58134)
+
+3. Player
 * [Bodyguards](https://assetstore.unity.com/packages/3d/characters/humanoids/bodyguards-31711)
 
-3. Zombie
-* [Zombie Animation Pack Free](https://assetstore.unity.com/packages/3d/animations/zombie-animation-pack-free-150219)
-* [Modern Zombie Free](https://assetstore.unity.com/packages/3d/characters/humanoids/modern-zombie-free-58134) (choose this)
-* [Zombie](https://assetstore.unity.com/packages/3d/characters/humanoids/zombie-30232)
-
-4. FPS Camera
-* [Easy FPS](https://assetstore.unity.com/packages/3d/characters/humanoids/easy-fps-73776) (choose this)
-
-5. Basic asset
+4. Basic asset
 * [Standard Assets](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-32351)
+* [Textmesh pro](https://assetstore.unity.com/packages/essentials/beta-projects/textmesh-pro-84126)
+5. Network
+* [Network lobby](https://assetstore.unity.com/packages/essentials/network-lobby-41836)
 
-6. Skybox
-* [Urban Night Sky](https://assetstore.unity.com/packages/2d/textures-materials/sky/urban-night-sky-134468)
+***Note***: This is for **educational purposes** only.
