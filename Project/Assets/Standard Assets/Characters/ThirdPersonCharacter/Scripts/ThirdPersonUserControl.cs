@@ -78,6 +78,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                     //Debug.Log("light intensity = " + m_Light.intensity);
                     m_Light.intensity = (1f - (1f / 60)) * m_Light.intensity;
                 }
+
+                m_SurvivalTimeText.SetText("");
                 return;
             }
             else
