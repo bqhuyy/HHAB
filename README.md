@@ -3,8 +3,24 @@
 ## Intruction
 The world has been infected by a virus, that could spread and has created an enormous zombie apocalypse. The main character, **H2AB**, is hiding in a dark wood, with no equipment to fight back. How long can he survive? Only god knows.
 
-
 ![Poster](https://github.com/bqhuyy/HHAB/blob/master/Marketing/poster.png?raw=true)
+
+## Difficulties:
+
+1. Our first difficulty was finding an idea to create a game that everyone can play so that we can play with our friends. Therefore, the game must be fun, easy to play and memorable.
+
+2. Because our group had four people, we found struggle to merge conflicts. Sometimes, when one of our members changed parameters in inspector and pushed his source to github, there was no changes recognized by git and others had to change inspector’s parameters by themselves which was time-consuming.
+
+3. There was inconsistency between testing phase and product phase. For example, Hieu used canvas from asset store as a prefab for editor scene which worked fine when testing but a bug existed when building the product.
+
+4. Since this game was an online game that everyone can join to play together, we have to dealt with many problems, such as how to host and join a room, how to generate zombies that any players can see and each player can see each other.
+
+5. Terrain optimization. As regards terrain, we initially built a spectacular terrain which took us days to accomplish. However, due to a great deal of vertices in a scene, the game cannot run smoothly. Luckily, thanks to teacher’s advice, we created a new terrain which used less resources by decreasing number of vertices.
+
+6. Regarding to game player’s perspective, at first we tried to use first person controller (FPS) to make the game more natural. However, after a lot of efforts, we failed to use it. Fortunately, we had a unique idea about using the third person controller to control the game player which allowed us to create a creative light that make the game truly scary.
+
+In conclusion, we believe that some existing resources in asset store were not good as they seemed, even though they were built by unity team.
+
 
 ## Requirement
 * Unity version: **2019.2.0f1**
